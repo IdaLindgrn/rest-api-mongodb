@@ -5,22 +5,19 @@ const ParticipantSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    email : {
+    email: {
         type: String,
         required: true,
         unique: true,
     },
-    paymentStatus : {
+    paymentStatus: {
         type: String,
-        required: true,
+        default: "pending",
     },
-    class : {
+    role: {
         type: String,
         required: true,
-    },
-    role : {
-        type: String,
-        required: true,
+        enum: ['leader', 'follower'],
     }
 
 })

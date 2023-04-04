@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 
+
 const DanceClassSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -37,9 +38,8 @@ const DanceClassSchema = new mongoose.Schema({
         type: Boolean,
         required: true,
     },
-    participant: [{
-        type: mongoose.Schema.Types.ObjectId, ref: "participant"
-    }],
+    participant: [],
+    participants: []
 
 })
 

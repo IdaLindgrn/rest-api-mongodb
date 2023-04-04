@@ -1,6 +1,8 @@
 require('dotenv').config()
 const express = require('express')
 const { default: mongoose } = require('mongoose')
+const classRoutes = require("./routes/classRoutes")
+const participantRoutes = require("./routes/participantRoutes")
 
 const app = express()
 
@@ -10,6 +12,9 @@ app.use((req, res, next) => {
 	console.log(`Processing ${req.method} request to ${req.path}`)
 	next()
 })
+
+app.use("/api/v1/danceclasses", classRoutes)
+app.use("/api/v1/participants", participantRoutes)
 
 const port = 5000
 const run = async () => {
