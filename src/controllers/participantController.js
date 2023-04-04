@@ -9,12 +9,12 @@ exports.createParticipant = async (req, res, next) => {
     const participantPayment = req.body.paymentStatus
     const participantRole = req.body.role
 
-    if (!participantName || !participantEmail || !participantRole) throw new NotFoundError("You must provide a name, email and role");
-
-    if (participantRole !== "follower" && participantRole !== "leader") throw new NotFoundError("You must choose between the 'follower' and 'leader' role");
-
-
     try {
+
+        if (!participantName || !participantEmail || !participantRole) throw new NotFoundError("You must provide a name, email and role");
+
+        if (participantRole !== "follower" && participantRole !== "leader") throw new NotFoundError("You must choose between the 'follower' and 'leader' role");
+
 
 
         const newParticipant = await Participant.create({
@@ -39,7 +39,7 @@ exports.updateParticipant = async (req, res, next) => {
     const { email, paymentStatus } = req.body;
 
     try {
-        if (!email || !paymentStatus) throw new NotFoundError("Your most provide an email or payment to update");
+        if (!email && !paymentStatus) throw new NotFoundError("Your most provide an email or payment to update");
 
         const updateParticipant = await Participant.findById(participantId)
 
