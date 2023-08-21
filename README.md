@@ -1,13 +1,13 @@
-## Kompletteringsuppgift för Inlämningsuppgift 2 (REST API med MongoDB)
+## Inlämningsuppgift 2 (REST API med MongoDB)
 
-Detta är en kompletteringsuppgift för kursens individuella inlämningsuppgift nummer 2 som ämnar till att utvärdera elevens individuella kunskaper kring ExpressJS, REST API och MongoDB samt följande lärandemål från kursplanen:
+Detta är kursens individuella inlämningsuppgift nummer 2 som ämnar till att utvärdera elevens individuella kunskaper kring ExpressJS, REST API och MongoDB samt följande lärandemål från kursplanen:
 
 - Planering av att skapa dynamiska webbapplikationer
 - Programmera databasdrivna webbplatser
 - NoSQL databaser
 - Databasdesign och normalisering av NoSQL databaser
 
-Kompletteringsuppgiften är baserad på en tidigare teoretisk uppgift kring REST API och MongoDB databas design så ni bör känna igen den. Ni ska bygga ett litet REST API (med MongoDB) för en dansskola. API:et ska kunna hämta data kring kurser per termin samt lägga till deltagare till kurserna.
+Uppgiften är baserad på en tidigare teoretisk uppgift kring REST API och MongoDB databas design så ni bör känna igen den. Ni ska bygga ett litet REST API (med MongoDB) för en dansskola. API:et ska kunna hämta data kring kurser per termin samt lägga till deltagare till kurserna.
 
 ## Instruktioner
 
@@ -29,7 +29,7 @@ Filer som kan ignoreras (låt de bara ligga kvar):
 
 ## Krav för godkänt
 
-Lämna in länken till ditt forkade repo senast tisdagen den 21/3. Du bör ha fått tillgång till en ny inlämningsuppgift tillagt på ItsLearning som heter "Kompletteringsuppgift för inlämningsuppgift 2" där du kan lämna in länken.
+Lämna in länken till ditt forkade repo senast tisdagen den 21/3. Du bör ha fått tillgång till en ny inlämningsuppgift tillagt på ItsLearning som heter "inlämningsuppgift 2" där du kan lämna in länken.
 
 För att uppnå godkänt måste ditt API:
 
